@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+<section>
+    <button class="btn btn-primary mt-5" id="detailbtn" value="{{slug}}" > view details </button>
+    <div class="container py-5" id="blogdetail">        
+        <div class="row text-center mb-5">
+            <p class="h1 text-capitalize mb-3" id="title"></p>
+            <div class="col-xl-10 mx-auto">
+                <img class="img-fluid" id="detail-img"  >
+            </div>      
+        </div>
+        <div class="row">
+            <div class="col-xl-8 col-lg-10 mx-auto">
+                <div class="text-content fw-normal fs-5" id="content">
+                </div>
+                <p class="text-end mb-2 text-muted" id="author">
+                <p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+{% endblock %}

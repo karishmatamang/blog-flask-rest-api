@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+ 
+{% block content %}
+<input type="hidden" id='csrf' name="csrf_token" value="{{ csrf_token() }}"/>
+<section>
+    <div class="container py-5">
+        <table class="table" id="list">
+            <thead>
+              <tr>
+                <th scope="col">Blog_id</th>
+                <th scope="col">Blog title</th>
+                <th scope="col">Created_at</th>
+                <th scope="col">Action</th>
+                <th scope="col">Action</th>                
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            
+          </table>
+    </div>
+</section>
+{% endblock %}

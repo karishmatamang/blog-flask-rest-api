@@ -1,0 +1,100 @@
+blog-container .card {
+    width: 300px;
+    background: #fff;
+    font-family: "Roboto", sans-serif;
+    padding: 16px;
+    box-shadow: 0 9px 17px -6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 400ms ease;
+  }
+  
+  .blog-container .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .blog-container * {
+    box-sizing: border-box;
+  }
+  
+  .blog-container .card .card-content {
+    text-decoration: none;
+    color: #14213d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 100%; */
+  }
+  
+  .courses-container .card img {
+    margin: -16px;
+    object-fit: cover;
+    height:250px;
+  }
+  .blog-container .card a.title {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px 0 2px 2px;
+    line-height: 1.4;
+    color: black;
+    font-weight: bold;
+
+  }
+  
+  .blog-container .card .author {
+    color: gray;
+    padding: 0px 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  
+  
+  .blog-container .card .updated {
+    font-size: 15px;
+    color: #333;
+    margin:0 0 2px 2px;
+    line-height: 1.7;
+  }
+  
+  .blog-container .card .readmore {
+    font-size: 15px;
+    color: skyblue;
+    margin:2px 0 10px 2px;
+    line-height: 1.4;
+    text-decoration: underline;
+  }
+  
+  .blog-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 850px) {
+    .blog-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .blog-container .card {
+      width: 100%;
+    }
+  
+    .blog-container .card img {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .blog-container {
+      grid-template-columns: 1fr;
+      max-width: 320px;
+    }
+  }
+
+#detail-img{
+    width:100%; 
+    height:350px; 
+    object-fit:contain;
+}
